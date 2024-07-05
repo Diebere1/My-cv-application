@@ -269,6 +269,8 @@ export default function MyCvApp () {
   )
 }
 
+// https://my-cv-application.pages.dev/
+
 
 // the pure basics code 
 // function MyCvApp() {
