@@ -66,6 +66,51 @@ function GeneralInfo ({isEditing, onEdit, onSubmit}){
         </div>
       ) }
     </div>
+    
+    // <div>
+    //   {isEditing ? (
+    //     <form onSubmit={handleSubmit}>
+    //       <label><strong>Name:</strong></label>
+    //       <br />
+    //       <input type="text" name='name' value={formData.name} onChange={handleChange}/>
+    //       <br />
+    //       <br />
+
+    //       <label><strong>Email:</strong></label>
+    //       <br />
+    //       <input type="text"  name='email' value={formData.email} onChange={handleChange}/>
+    //       <br />
+    //       <br />
+
+    //       <label><strong>Phone:</strong></label>
+    //       <br />
+    //       <input type="text" name='phone' value={formData.phone} onChange={handleChange}/>
+    //       <br />
+    //       <br />
+
+    //       <button type='submit'>Submit</button>
+    //     </form>
+    //   ) :(
+    //     <div>
+    //       <p>
+    //         <strong>Name: </strong> 
+    //         {formData.name}
+    //       </p>
+
+    //       <p>
+    //         <strong>Email: </strong> 
+    //         {formData.email}
+    //       </p>
+
+    //       <p>
+    //         <strong>Phone: </strong>
+    //         {formData.phone}
+    //       </p>
+
+    //       <button onClick={onEdit}>Edit</button>
+    //     </div>
+    //   ) }
+    // </div>
   )
 }
 
@@ -245,27 +290,62 @@ export default function MyCvApp () {
 
   return(
     <div>
-      <h1>General Information</h1>
-      <GeneralInfo 
-        isEditing={editSection === 'generalInfo'}
-        onEdit={() => handleEdit('generalInfo')}
-        onSubmit={handleGeneralInfoSubmit}
-      />
+      <header>
+        <h1>Emmanuel Ethelbert</h1>
+        <p>
+          emmanuelethelbert@gmail.com 
+          emmanuelethelbert@gmail.com
+          emmanuelethelbert@gmail.com
+        </p>
+      </header>
 
-      <h1>Educational Information</h1>
-      <EducationalInfo
-        isEditing={editSection === 'educationalInfo'}
-        onEdit={() => handleEdit('educationalInfo')}
-        onSubmit={handleEducationalInfoSubmit}
-      />
+      <div className='About-me'>
+        <div className='about-me-div'>
+          <h2>General Information</h2>
+          <p>
+            Similar to resume summary - about me is an introduction that provides a brief snapshot of your background, relevant skills, and key accomplishments.
+          </p>
+        </div>
+        <div className='gen-info'>
+          <GeneralInfo 
+            isEditing={editSection === 'generalInfo'}
+            onEdit={() => handleEdit('generalInfo')}
+            onSubmit={handleGeneralInfoSubmit}
+          />
+        </div>
+      </div>
 
-      <h1>Experience Inforamtion</h1>
-      <ExperienceInfo
-        isEditing={editSection === 'experienceInfo'}
-        onEdit={() => handleEdit('experienceInfo')}
-        onSubmit={handleExperienceInfoSubmit}
-      />
+      <div className='More-info'>
+        <div className='edu-div'>
+          <div className='edu-info'>
+            <h2>Educational Information</h2>
+          </div>
+
+          <div className='edu-details'>
+            <EducationalInfo
+              isEditing={editSection === 'educationalInfo'}
+              onEdit={() => handleEdit('educationalInfo')}
+              onSubmit={handleEducationalInfoSubmit}
+            />
+          </div>
+        </div>
+
+        <div className='exp-div'>
+          <div className='exp-info'>
+            <h2>Experience Inforamtion</h2>
+          </div>
+
+          <div className='exp-details'>
+            <ExperienceInfo
+            isEditing={editSection === 'experienceInfo'}
+            onEdit={() => handleEdit('experienceInfo')}
+            onSubmit={handleExperienceInfoSubmit}
+            />
+          </div>
+        </div>
+      </div>
     </div>
+
   )
 }
 
