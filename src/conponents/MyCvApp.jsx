@@ -120,7 +120,7 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
     BDschool: 'Meta',
     study : 'Computer Science',
     location: 'Imo State, Owerri Nigeria',
-    date: 'June 2021 - Present'
+    date: 'January 2024 - Present'
   });
 
   const handleChange = (e) => {
@@ -163,7 +163,8 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
       ) : (
         <div>
           <div className='edu-show'>
-            <strong>Master Degree in CS</strong>
+            <strong>School of Information Communication Technology
+            </strong>
             <p>{formData.date}</p>
 
             <ul>
@@ -171,23 +172,24 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
               <li>{formData.location}</li>
             </ul>
 
-            <strong>Bachelors degree in CS</strong>
-            <p>{formData.date}</p>
+            <strong>Front-End Development</strong>
+            <p>Oct 2022 - 2023</p>
 
             <ul>
               <li>{formData.BDschool}</li>
-              <li>{formData.location}</li>
+              <li>Online Course</li>
             </ul>
           </div>
 
           <div>
             <h3>SKILLS</h3>
             <ul>
-              <li>Web Development</li>
+              <li>HTML5/CSS3</li>
+              <li>Javascript</li>
+              <li>ReactJs</li>
+              <li>Python</li>
               <li>Project Managment</li>
               <li>Time Managment</li>
-              <li>Communication</li>
-              <li>Web Testing</li>
             </ul>
           </div>
 
@@ -231,7 +233,7 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
 
 function ExperienceInfo ({isEditing, onEdit, onSubmit}){
   const [formData, setFormData] =useState({
-    company: 'Apriori Oil Group, MB Finance, BMO Online Bank, etc.',
+    company: 'Apriori Oil Group Company',
     position : 'Software Developer',
     responsibility: 'Web Design and Development',
     from: '2023',
@@ -311,7 +313,7 @@ function ExperienceInfo ({isEditing, onEdit, onSubmit}){
 
           <div className='conpy-header'>
             <div>
-              <strong>{formData.company}</strong>
+              <strong>MB Financial Bank</strong>
               <br />
               <p className='role'>{formData.position} </p>
             </div>
@@ -332,7 +334,7 @@ function ExperienceInfo ({isEditing, onEdit, onSubmit}){
           </ul>
           <div className='conpy-header'>
             <div>
-              <strong>{formData.company}</strong>
+              <strong>Logistics Company</strong>
               <br />
               <p className='role'>{formData.position} </p>
             </div>
@@ -411,7 +413,7 @@ export default function MyCvApp () {
         <div className='about-me-div'>
           <h2>General Information</h2>
           <p>
-            Similar to resume summary - about me is an introduction that provides a brief snapshot of your background, relevant skills, and key accomplishments.
+          Crafting responsive websites with HTML, CSS, and JavaScript, and continuously learning and exploring new technologies to drive online growth. And focus on improving user experiences. Feel free to let me know if you need further adjustments or have any other requests.
           </p>
         </div>
         <div className='gen-info'>
