@@ -62,7 +62,7 @@ function GeneralInfo ({isEditing, onEdit, onSubmit}){
             {formData.phone}
           </p>
 
-          <button onClick={onEdit}>Edit</button>
+          {/* <button onClick={onEdit}>Edit</button> */}
         </div>
       ) }
     </div>
@@ -116,9 +116,11 @@ function GeneralInfo ({isEditing, onEdit, onSubmit}){
 
 function EducationalInfo ({isEditing, onEdit, onSubmit}){
   const [formData, setFormData] =useState({
-    school: 'Federal Polytechnices Nekede, Owerri, Meta, Solo Learning, YouTube, Odin Project React',
+    MDschool: 'Federal Polytechnices Nekede',
+    BDschool: 'Meta',
     study : 'Computer Science',
-    date: '2021 to Present'
+    location: 'Imo State, Owerri Nigeria',
+    date: 'June 2021 - Present'
   });
 
   const handleChange = (e) => {
@@ -140,7 +142,7 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
         <form onSubmit={handleSubmit}>
           <label><strong>School: </strong></label>
           <br />
-          <input type="text"  name='school' value={formData.school} onChange={handleChange}/>
+          <input type="text"  name='school' value={formData.MDschool} onChange={handleChange}/>
           <br />
           <br />
 
@@ -160,8 +162,53 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
         </form>
       ) : (
         <div>
-          <p>
-            <strong>School: </strong>
+          <div className='edu-show'>
+            <strong>Master Degree in CS</strong>
+            <p>{formData.date}</p>
+
+            <ul>
+              <li>{formData.MDschool}</li>
+              <li>{formData.location}</li>
+            </ul>
+
+            <strong>Bachelors degree in CS</strong>
+            <p>{formData.date}</p>
+
+            <ul>
+              <li>{formData.BDschool}</li>
+              <li>{formData.location}</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>SKILLS</h3>
+            <ul>
+              <li>Web Development</li>
+              <li>Project Managment</li>
+              <li>Time Managment</li>
+              <li>Communication</li>
+              <li>Web Testing</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>ACHIEVEMENTS</h3>
+            <strong>My achievements</strong>
+            <ul>
+              <li>{formData.location}</li>
+              <li>{formData.date}</li>
+            </ul>
+
+            <strong>My achievements</strong>
+            <ul>
+              <li>{formData.location}</li>
+              <li>{formData.date}</li>
+            </ul>
+          </div>
+
+
+          {/* <p>
+            <strong>Master Degree in CS</strong>
             {formData.school}
           </p>
 
@@ -173,9 +220,9 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
           <p>
             <strong>Date: </strong>
             {formData.date}
-          </p>
+          </p> */}
 
-          <button onClick={onEdit}>Edit</button>
+          {/* <button onClick={onEdit}>Edit</button> */}
         </div>
       )}
     </div>
@@ -239,13 +286,74 @@ function ExperienceInfo ({isEditing, onEdit, onSubmit}){
           <button type='submit'>Submit</button>
         </form>
       ) : (
-        <div>
-          <p>
-            <strong>Company: </strong>
-            {formData.company}
-          </p>
+        <div className='experience-div'>
+          <div className='conpy-header'>
+            <div>
+              <strong>{formData.company}</strong>
+              <br />
+              <p className='role'>{formData.position} </p>
+            </div>
 
-          <p>
+            <div className='locn-date-div'>
+              <span>Location</span>
+              <br />
+              <span>{formData.from} - {formData.to}</span>
+            </div>
+          </div>
+
+          <p className='rel-work'>
+            including relevant work experience on my resume is important because it show hiring managers you've understood the requirements of the job
+          </p>
+          <ul>
+            <li>{formData.responsibility}</li>
+            <li>{formData.responsibility}</li>
+          </ul>
+
+          <div className='conpy-header'>
+            <div>
+              <strong>{formData.company}</strong>
+              <br />
+              <p className='role'>{formData.position} </p>
+            </div>
+
+            <div className='locn-date-div'>
+              <span>Location</span>
+              <br />
+              <span>{formData.from} - {formData.to}</span>
+            </div>
+          </div>
+
+          <p className='rel-work'>
+            including relevant work experience on my resume is important because it show hiring managers you've understood the requirements of the job
+          </p>
+          <ul>
+            <li>{formData.responsibility}</li>
+            <li>{formData.responsibility}</li>
+          </ul>
+          <div className='conpy-header'>
+            <div>
+              <strong>{formData.company}</strong>
+              <br />
+              <p className='role'>{formData.position} </p>
+            </div>
+
+            <div className='locn-date-div'>
+              <span>Location</span>
+              <br />
+              <span>{formData.from} - {formData.to}</span>
+            </div>
+          </div>
+
+          <p className='rel-work'>
+            including relevant work experience on my resume is important because it show hiring managers you've understood the requirements of the job
+          </p>
+          <ul>
+            <li>{formData.responsibility}</li>
+            <li>{formData.responsibility}</li>
+          </ul>
+          
+
+          {/* <p>
             <strong>Position: </strong>
             {formData.position}
           </p>
@@ -262,9 +370,9 @@ function ExperienceInfo ({isEditing, onEdit, onSubmit}){
           <p>
             <strong>To: </strong>
             {formData.to}
-          </p>
+          </p> */}
 
-          <button onClick={onEdit}>Edit</button>
+          {/* <button onClick={onEdit}>Edit</button> */}
         </div>
       )}
     </div>

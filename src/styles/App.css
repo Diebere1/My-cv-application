@@ -1,8 +1,9 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding:0 4rem 0 4rem;
-  /* text-align: center; */
+  font-size: 16px;
+  font-family: Arial;
 }
 header{
   text-align: center;
@@ -23,7 +24,8 @@ header{
 }
 .edu-div{
   border-right: 2px solid black;
-  height: 400px;
+  height: 750px;
+  width: 600px;
 }
 .edu-info,
 .exp-info{
@@ -31,6 +33,9 @@ header{
 }
 .edu-details{
   margin-right: 40px;
+}
+.edu-show{
+  margin-top: 20px;
 }
 .exp-div{
   width: 100rem;
@@ -43,7 +48,29 @@ header{
   width: 450px;
 }
 .gen-info{
-  width: 270px;
+  width: 300px;
+}
+
+.experience-div{
+  width: 680px;
+}
+.conpy-header{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-top: 20px;
+}
+.role{
+  margin-top: 10px;
+}
+.locn-date-div{
+  text-align: right;
+}
+.rel-work{
+  width: 450px;
+  font-size: 16px;
+  font-family: Arial;
+  /* color: #888; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
