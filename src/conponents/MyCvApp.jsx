@@ -407,9 +407,7 @@ export default function MyCvApp () {
       <header>
         <h1>Emmanuel Ethelbert</h1>
         <p>
-          {socialHandle.email} ||
-          {socialHandle.linkdin} ||
-          {socialHandle.github}
+          {socialHandle.email} || {socialHandle.linkdin} || {socialHandle.github}
         </p>
       </header>
 
