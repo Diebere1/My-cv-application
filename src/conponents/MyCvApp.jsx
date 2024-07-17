@@ -382,6 +382,11 @@ function ExperienceInfo ({isEditing, onEdit, onSubmit}){
 }
 
 export default function MyCvApp () {
+  const socialHandle = {
+    email: 'emmanuelethelbert@gmail.com',
+    linkdin: 'emmanuelethelbert@gmail.com',
+    github: 'emmanuelethelbert@gmail.com'
+  }
   const [editSection, setEditingSection] = useState(null); 
   
   const handleEdit = (section) => {
@@ -397,15 +402,14 @@ export default function MyCvApp () {
   const handleExperienceInfoSubmit = (data) => {
     setEditingSection(null);
   }
-
   return(
     <div>
       <header>
         <h1>Emmanuel Ethelbert</h1>
         <p>
-          emmanuelethelbert@gmail.com 
-          emmanuelethelbert@gmail.com
-          emmanuelethelbert@gmail.com
+          {socialHandle.email} ||
+          {socialHandle.linkdin} ||
+          {socialHandle.github}
         </p>
       </header>
 
@@ -413,7 +417,7 @@ export default function MyCvApp () {
         <div className='about-me-div'>
           <h2>General Information</h2>
           <p>
-          Crafting responsive websites with HTML, CSS, and JavaScript, and continuously learning and exploring new technologies to drive online growth. And focus on improving user experiences. Feel free to let me know if you need further adjustments or have any other requests.
+            Crafting responsive websites with HTML, CSS, and JavaScript, and continuously learning and exploring new technologies to drive online growth. And focus on improving user experiences. Feel free to let me know if you need further adjustments or have any other requests.
           </p>
         </div>
         <div className='gen-info'>
