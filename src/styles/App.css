@@ -9,6 +9,10 @@ header{
   text-align: center;
   border-bottom: 2px solid black;
 }
+h1{
+  margin: 0;
+  padding: 0;
+}
 .About-me{
   display: flex;
   align-items: flex-start;
