@@ -116,8 +116,8 @@ function GeneralInfo ({isEditing, onEdit, onSubmit}){
 
 function EducationalInfo ({isEditing, onEdit, onSubmit}){
   const [formData, setFormData] =useState({
-    MDschool: 'Federal Polytechnices Nekede',
-    BDschool: 'Meta',
+    MDschool: 'Federal Polytechnices Nekede, Owerri',
+    BDschool: 'Meta offer through Coursera',
     study : 'Computer Science',
     location: 'Imo State, Owerri Nigeria',
     date: 'January 2024 - Present'
@@ -163,16 +163,16 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
       ) : (
         <div>
           <div className='edu-show'>
-            <strong>School of Information Communication Technology
+            <strong>School of Information Communication & Technology
             </strong>
             <p>{formData.date}</p>
 
             <ul>
               <li>{formData.MDschool}</li>
-              <li>{formData.location}</li>
+              {/* <li>{formData.location}</li> */}
             </ul>
 
-            <strong>Front-End Development</strong>
+            <strong>Front-End Development Course</strong>
             <p>Oct 2022 - 2023</p>
 
             <ul>
@@ -195,16 +195,28 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
 
           <div>
             <h3>ACHIEVEMENTS</h3>
-            <strong>My achievements</strong>
+            <strong>Introduction to Front- End Development</strong>
             <ul>
-              <li>{formData.location}</li>
-              <li>{formData.date}</li>
+              <li>{formData.BDschool}</li>
+              <li>Dec 2, 2022</li>
             </ul>
 
-            <strong>My achievements</strong>
+            <strong>Programming in Javascript</strong>
             <ul>
-              <li>{formData.location}</li>
-              <li>{formData.date}</li>
+              <li>{formData.BDschool}</li>
+              <li>Jan 24, 2023</li>
+            </ul>
+
+            <strong>Version Control</strong>
+            <ul>
+              <li>{formData.BDschool}</li>
+              <li>Feb 3, 2023</li>
+            </ul>
+
+            <strong>HTML/CSS in depth</strong>
+            <ul>
+              <li>{formData.BDschool}</li>
+              <li>Mar 24, 2023</li>
             </ul>
           </div>
 
@@ -233,7 +245,7 @@ function EducationalInfo ({isEditing, onEdit, onSubmit}){
 
 function ExperienceInfo ({isEditing, onEdit, onSubmit}){
   const [formData, setFormData] =useState({
-    company: 'Apriori Oil Group Company',
+    // company: 'Apriori Oil Group Company',
     position : 'Software Developer',
     responsibility: 'Web Design and Development',
     from: '2023',
@@ -291,13 +303,13 @@ function ExperienceInfo ({isEditing, onEdit, onSubmit}){
         <div className='experience-div'>
           <div className='conpy-header'>
             <div>
-              <strong>{formData.company}</strong>
+              <strong>Apriori Oil Group Company</strong>
               <br />
-              <p className='role'>{formData.position} </p>
+              <p className='role'>Freelancing Job</p>
             </div>
 
             <div className='locn-date-div'>
-              <span>Location</span>
+              <span>Remotely</span>
               <br />
               <span>{formData.from} - {formData.to}</span>
             </div>
@@ -308,18 +320,18 @@ function ExperienceInfo ({isEditing, onEdit, onSubmit}){
           </p>
           <ul>
             <li>{formData.responsibility}</li>
-            <li>{formData.responsibility}</li>
+            <li>Web Managment</li>
           </ul>
 
           <div className='conpy-header'>
             <div>
               <strong>MB Financial Bank</strong>
               <br />
-              <p className='role'>{formData.position} </p>
+              <p className='role'>Freelancing Job</p>
             </div>
 
             <div className='locn-date-div'>
-              <span>Location</span>
+              <span>Remotely</span>
               <br />
               <span>{formData.from} - {formData.to}</span>
             </div>
@@ -336,11 +348,11 @@ function ExperienceInfo ({isEditing, onEdit, onSubmit}){
             <div>
               <strong>Logistics Company</strong>
               <br />
-              <p className='role'>{formData.position} </p>
+              <p className='role'>Freelancing Job</p>
             </div>
 
             <div className='locn-date-div'>
-              <span>Location</span>
+              <span>Remotely</span>
               <br />
               <span>{formData.from} - {formData.to}</span>
             </div>
@@ -385,7 +397,7 @@ export default function MyCvApp () {
   const socialHandle = {
     email: 'emmanuelethelbert@gmail.com',
     linkdin: 'emmanuelethelbert@gmail.com',
-    github: 'emmanuelethelbert@gmail.com'
+    github: 'https://github.com/Diebere1'
   }
   const [editSection, setEditingSection] = useState(null); 
   
