@@ -90,3 +90,57 @@ h1{
 .read-the-docs {
   color: #888;
 }
+/* tablet screen size  */
+@media only screen and (max-width: 768px){
+  #root {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  body,
+  html{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  h2{
+    font-size: 21px;
+  }
+  .About-me {
+    flex-direction: column;
+  }
+  .about-me-div {
+    /* width: 350px; */
+    width: 100%;
+  }
+  .edu-div {
+    width: 300px;
+  }
+  .exp-div {
+    width: 400px;
+  }
+  .exp-info h2, 
+  .exp-details {
+    margin-left: 20px;
+  }
+  .conpy-header {
+    width: 400px;
+  }
+  .locn-date-div {
+    text-align: right;
+    margin-right: 20px;
+  }
+  .rel-work {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2{
+    font-size: 16px;
+  }
+  .edu-div {
+    width: 550px;
+  }
+  .exp-div {
+    width: 400px;
+  }
+}
+
