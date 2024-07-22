@@ -132,7 +132,8 @@ h1{
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* Mobile phone form screen size of 600px */
+@media screen and (max-width: 600px) {
   h2{
     font-size: 16px;
   }
@@ -153,3 +154,21 @@ h1{
   }
 }
 
+@media only screen and (max-width: 478px){
+  #root {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+  .edu-div {
+    width: 170px;
+  }
+  .exp-div {
+    width: 188px;
+  }
+  .exp-info h2, .exp-details {
+    margin-left: 10px;
+  }
+  .conpy-header {
+    flex-direction: column;
+    width: 280px; 
+  }
+}
