@@ -140,7 +140,16 @@ h1{
     width: 550px;
   }
   .exp-div {
-    width: 400px;
+    width: 300px;
+  }
+  .conpy-header {
+    width: 280px;
+  }
+  .locn-date-div {
+    margin-right: 0;
+  }
+  .rel-work {
+    width: 288px;
   }
 }
 
